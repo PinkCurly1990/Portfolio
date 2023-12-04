@@ -1,0 +1,345 @@
+/* Colors Palette
+
+#b8b8b8 grey
+#ffffff white
+#000000 black
+#ffb3c7 light pink
+#ff7c9f  pink
+#ffe0e0 nude
+*/
+
+
+body{
+    background-image: url(../portfolio/images/starsback.gif);
+    overflow-x: hidden;
+    
+}
+
+/* Nav Bar Section */
+
+.navlist {
+	background-color: black;
+	
+}
+
+.navlist ul li {
+	padding: 5px 25px;
+}
+
+
+.navlist ul {
+	list-style: none;
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+	font-family: monospace;
+	color: white;
+	font-size: 20px;
+}
+
+.navlist {
+
+	
+	display: flex;
+	width: 35%;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 15px;
+	position: relative;
+}
+a:hover {
+    text-decoration: underline;
+    color: #fddde6;
+}
+
+/* Footer Section */
+
+
+footer {
+	position: relative;
+	display: flex;
+	width: 100%;
+	margin-left: 1%;
+	padding: 2px;
+	min-height: 20px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    margin-top: 25px;
+}
+
+footer {
+	background-color: black;
+    float: right;
+    border: 2px solid black;
+    
+    
+	
+}
+
+.footnote:hover {
+	background-color: #ffb3c7;
+	border-radius: 8px 5px;
+	border-width: 10px 5px 5px;
+}
+
+
+.footer2 .footnote {
+	display: flex;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	justify-content: center;
+	list-style: none;
+	margin: 10px;
+	font-size: 30px;
+   
+
+}
+
+/* Footer Text */
+
+.text{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+
+/* Footer Social Media */
+
+footer .socialmedia {
+	list-style: none;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+	
+}
+
+footer .socialmedia li a 
+  {
+	margin: 0 20px;
+	display: inline-block;
+	transition: 0.5s;
+}
+
+footer .socialmedia li a:hover {
+	transform: translateY(-8px);
+}
+
+/* Images Section */
+
+.image {
+	height: 300px;
+}
+
+.images {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 1rem;
+	width: 700px;
+	margin-left:  195px;
+	filter: sepia(20%);
+	
+}
+
+.images img {
+	font-weight: 100%;
+	width: 400px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+    margin-top: 90px;
+	
+	
+}
+
+
+/* Bottom Text- Copyright */
+
+.bottomtext {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-left: 40px;
+    padding: 10px;
+
+}
+
+/* H1 Section */
+
+.first h3 {
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    font-size: 40px;
+    color: #ff7c9f;
+
+    background-color: #b8b8b8;
+}
+
+h1{
+    color: pink;
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+    
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+/* H2 Section */
+
+h2{
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+    color: pink;
+    word-spacing: 15px;
+}
+
+/* Header Picture */
+
+.pic {
+
+    margin-top: 8%;
+    width: 500px;
+    border-radius: 30%;
+
+   
+}
+
+/* Button */
+ 
+button  {
+    color: white;
+    border: 5px solid #711A75;
+    background-color: #711A75;
+    border-radius: 2px;
+    border-width: 10px 10px 10px;
+    
+}
+
+.wrap {
+    
+    height: 690px;
+}
+
+.bottom {
+    background: #fd6c9e;
+    width: 120%;
+	color: black;
+    
+}
+
+/* Video Background */
+
+.videoback {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	z-index: -1;
+	background-repeat: repeat-y;
+	
+	
+
+}
+
+/* Hamburger */
+
+
+input[type=checkbox] {
+	display: none;
+
+}
+
+.hamburger {
+	display: none;
+	font-size: 25px;
+}
+
+.first p {
+	font-size: 35px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+	
+	.image {
+		width: 100%;
+		margin-left: -200px;
+	}
+
+	.images {
+		grid-gap: 10px;
+		grid-template-columns: auto;
+		padding: 20px;
+	
+		
+	}
+
+	.navlist ul {
+		padding: 15px;
+		background-color: black;
+		display: block;
+		width: 50%;
+		border-radius: 5px;
+		font-weight: bold;
+	}
+
+	.headnote {
+		text-align: center;
+		font-size: 20px;
+		margin-left: 30%;
+		
+	
+		
+	}
+	
+	.headnote:hover {
+		background-color: #fd6c9e;
+		border-radius: 5px;
+		border-width: 5px;
+	
+	}
+
+	.navlist {
+	
+		width: 100%;
+		display: none;
+		
+		
+	}
+
+	input[type=checkbox]:checked ~ .navlist {
+		display: block;
+	}
+	
+	.hamburger {
+		display: block;
+		background-color: black;
+		border-radius: 3px;
+	}
+
+	.hamburger {
+		color: white;
+	}
+	
+	.images .img {
+top: 80px;
+
+	}

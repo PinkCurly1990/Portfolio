@@ -1,0 +1,311 @@
+
+body {
+    background-color: #ffe0e0;
+    min-height: 100vh;
+	overflow-x: hidden;
+}
+
+html {
+	height: 100%;
+}
+
+/* Nav Bar Section */
+
+.navlist {
+	background-color: black;
+	
+}
+
+.navlist ul li {
+	padding: 5px 25px;
+}
+
+
+.navlist ul {
+	list-style: none;
+	display: flex;
+}
+
+.navlist a {
+	text-decoration: none;
+	font-family: monospace;
+	color: white;
+	font-size: 20px;
+}
+
+.navlist {
+
+	
+	display: flex;
+	width: 35%;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 15px;
+	position: relative;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fddde6;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+	
+	
+}
+
+h1{
+    background-color: black;
+}
+
+
+
+
+/* Styling for form */
+.form {
+	background: pink;
+	position: absolute;
+	max-width: 600px;
+	width: 100%;
+	top: 28%;
+	right: 28%;
+	padding: 50px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+	text-align: center;
+}
+	
+.form{
+	box-shadow: 5px 10px black;
+	padding: 10px;
+	border: 1px soild;
+}
+
+.form h3 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.form .input1 {
+	margin-bottom: 15px;
+}
+
+
+.form .input1 {
+	width: 100%;
+	padding: 10px;
+	background: tranparent;
+	border: none;
+}
+
+
+.form .input1 textarea {
+	resize:none;
+	height: 100px;
+}
+
+/* Styling for message box */
+textarea {
+	width: 400px;
+}
+
+/* Footer Section */
+
+
+footer {
+	position: relative;
+	display: flex;
+	width: 100%;
+	margin-left: 1%;
+	padding: 2px;
+	
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    margin-top: 25px;
+	
+}
+
+footer {
+	background-color: black;
+    float: right;
+    border: 2px solid black;
+	width: 100%;
+    
+    
+	
+}
+
+.footnote:hover {
+	background-color: #ffb3c7;
+	border-radius: 8px 5px;
+	border-width: 10px 5px 5px;
+}
+
+
+.footer2 .footnote {
+	display: flex;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	justify-content: center;
+	list-style: none;
+	margin: 10px;
+	font-size: 30px;
+   
+
+}
+
+/* Footer Text */
+
+.text{
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+
+/* Footer Social Media */
+
+footer .socialmedia {
+	list-style: none;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+	
+}
+
+footer .socialmedia li a 
+  {
+	margin: 0 20px;
+	display: inline-block;
+	transition: 0.5s;
+}
+
+footer .socialmedia li a:hover {
+	transform: translateY(-8px);
+}
+
+.footnote a {
+	text-decoration: none;
+	text-decoration: none;
+	font-family: monospace;
+	color: white;
+	font-size: 20px;
+}
+
+
+
+.wrap {
+    
+    height: 690px;
+}
+
+
+
+
+/* Bottom Text- Copyright */
+
+ .bottomtext {
+    text-align: center;
+    font-weight: 100;
+    margin-left: 40px;
+    padding: 10px;
+	color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+
+}
+
+
+.bottom {
+    background: #fd6c9e;
+    width: 100%;
+}
+
+/* Hamburger */
+
+
+input[type=checkbox] {
+	display: none;
+
+}
+
+.hamburger {
+	display: none;
+	font-size: 25px;
+}
+
+@media screen and (max-width: 800px) {
+
+	/* Hamburger Menu for mobile */
+
+	input[type=checkbox]:checked ~ .navlist {
+		display: block;
+	}
+
+	.navlist ul {
+		padding: 2px;
+		background-color: black;
+		display: block;
+		width: 50%;
+		border-radius: 5px;
+		font-weight: bold;
+	}
+
+	.headnote {
+		text-align: center;
+		font-size: 20px;
+		margin-left: 30%;
+		
+	
+		
+	}
+	
+	.headnote:hover {
+		background-color: #fd6c9e;
+		border-radius: 5px;
+		border-width: 5px;
+	
+	}
+
+	.navlist {
+	
+		width: 100%;
+		display: none;
+		
+		
+	}
+
+	
+	
+	.hamburger {
+		display: block;
+		background-color: black;
+		border-radius: 3px;
+
+	}
+
+	.hamburger {
+		color: white;
+	}
+
+	/* form for mobile and tablets */
+
+	.form {
+	 left: 25px;
+	 width: 86%;
+	}
+
+	textarea {
+		width: 200px;
+	}
